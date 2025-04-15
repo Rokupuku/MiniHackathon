@@ -1,5 +1,5 @@
 /* Header Styles */
-.Top-mypage-bar {
+.Top-my-page-bar {
     display: flex;
     justify-content: flex-end;
     background-color: black;
@@ -9,11 +9,11 @@
     padding-right: 10px;
 }   
 
-.mypage-bar {
+.my-page-bar {
     margin-right: 10px;
 }
 
-.mypage-bar a {
+.my-page-bar a {
     color: white;
     font-weight: bold;
 }
@@ -27,13 +27,15 @@
 
 .logo {
     margin-left: 10px;
+    padding-top: 13px;
 }
 
-.Top-mymenu-bar {
+.Top-my-menu-bar {
     display: flex;
     justify-content: space-around;
     gap: 30px;
     margin-right: 10px;
+    padding-top: 13px;
 }
 
 .Top-list-bar {
