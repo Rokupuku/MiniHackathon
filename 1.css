@@ -1,0 +1,64 @@
+/* 기본 설정 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* 전체 컨테이너 */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* 각 아이템 박스 */
+  .item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background-color: white;
+    transition: transform 0.3s;
+  }
+  
+  .item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* 이미지 설정 */
+  .item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  /* 텍스트 오버레이 */
+  .text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    max-width: 90%;
+    line-height: 1.4;
+  }
+  
+  /* 가로로 긴 박스 (2칸 차지) */
+  .wide {
+    grid-column: span 2;
+  }
+  
+  @media (max-width: 768px) {
+    .wide {
+      grid-column: span 1;
+    }
+  }
