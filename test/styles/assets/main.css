@@ -83,6 +83,7 @@
 
 .main-image:hover {
     transform: translateY(-5px);
+    transition: transform 0.3s ease;
 }
 
 .main-image-text {
@@ -134,6 +135,7 @@
 
 .sub-image:hover, .sub-image-wide:hover {
     transform: translateY(-5px);
+    transition: transform 0.3s ease;
 }
 
 .sub-image img {
