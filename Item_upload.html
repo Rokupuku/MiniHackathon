@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purplex upload</title>
+  <link href="./Item_upload.css" rel="stylesheet">
+</head>
+<body style="margin: 0;">
+    <header>
+        <div class="top-my-bar">
+            <div class="top-bar-text">
+                <a href="login.html">로그인</a>
+                <a href="mypage.html">마이페이지</a>
+            </div>   
+        </div>
+        <div class="top-menu-bar">
+            <div class="top-menu-bar-logo">
+                <img src="../styles/assets/purplex.png" alt="로고 이미지">
+            </div>
+            <div class="top-menu-bar-text">
+                <a href="search.html"><span><i class="fa-solid fa-magnifying-glass"></i></span></a>
+                <a href="wishlist.html"><span><i class="fa-solid fa-heart"></i></span></a>
+                <a href="cart.html"><span><i class="fa-solid fa-basket-shopping"></i></span></a>
+                <a href="brand1.html"><span><i class="fa-solid fa-bell"></i></span></a>
+            </div>
+        </div>
+        <hr>
+        <div class="top-list-bar" style="margin: 0;">
+            <a href="women's_clothes.html"><span>여성</span></a>
+            <a href="men's_clothes.html"><span>남성</span></a>
+            <a href="category3.html"><span>키즈</span></a>
+            <a href="category4.html"><span>럭셔리</span></a>
+            <a href="category5.html"><span>스포츠</span></a>
+            <a href="category6.html"><span>아울렛</span></a>
+            <a href="category7.html"><span>랭킹</span></a>
+            <a href="category8.html"><span>브랜드</span></a>
+            <a href="category9.html"><span>매거진</span></a>
+            <a href="category10.html"><span>기획전</span></a>
+            <a href="category11.html"><span>이벤트</span></a>
+        </div>
+        <hr>
+    </header>
+    <div style="width: 100%; display: flex; justify-content: center; ">
+        <div style="width: 80%; display: flex; flex-direction: column;">
+            <main>
+                <div style="height: 100px; display: flex; align-items: center; margin-top: 30px;">
+                    <p style="margin: 0; font-size: 34px; font-family: Arial, Helvetica, sans-serif; font-weight: 600;">상품 등록</p>
+                </div>
+                <div style="display: flex; gap: 15px">
+                    <div style="width: 350px; height: 350px; background-color: lightgray; display: flex; flex-direction: column; align-items: center;">
+                        <label for="imageUpload" style="cursor: pointer; background: url('109615.png') no-repeat center center; background-size: cover; width: 30px; height: 30px; display: block; margin-top: 150px"></label>
+                        <input id="imageUpload" type="file" accept="image/*, .jpg" style="display: none;">
+                        <p style="font-family: Arial, Helvetica, sans-serif; margin-top: 10px;">(0/10)</p>
+                    </div>
+                    <div style="display: flex; align-items: baseline; margin-top: 10px; flex-direction: column; width: 100%; margin-left: 10px;">
+                        <input type="text" placeholder="제목 입력..." style="width: 100%; height: 30px; font-size: 20px; border: 0;">
+                        <div style="width: 100%; height: 2px; background-color: #b39ccb;"></div>
+                        <input type="text" placeholder="내용 입력..." style="width: 99.3%; height: 97%; font-size: 18px; margin-top: 10px; border-radius: 0; border: 2px solid #b39ccb; box-shadow: none;">
+                    </div>
+                </div>
+                <div>
+                    <input type="text" placeholder="물품 가격 입력...(원)" style="width: 100%; height: 30px; font-size: 20px; border: 0; margin-top: 10px;">
+                    <div style="width: 100%; height: 2px; background-color: #b39ccb;"></div>
+                </div>
+                <div style="float: right; margin-top: 10px;">
+                    <button style="background-color: dimgray; color: white; border: 0; margin-right: 2px; width: 140px; height: 40px; font-size: 16px; font-family: Arial, Helvetica, sans-serif; font-weight: 600;" onclick="alert('상품이 임시저장 되었습니다.')">
+                        임시 저장
+                    </button>
+                    <button style="background-color: #543d98; color: white; border: 0; margin-left: 2px; width: 140px; height: 40px; font-size: 16px; font-family: Arial, Helvetica, sans-serif; font-weight: 600;" onclick="alert('상품이 등록되었습니다!')">
+                        상품 등록
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+
+</body>
+</html>
